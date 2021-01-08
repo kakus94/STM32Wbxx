@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScratchFile FileVersion="3.0">
+  <FileVersion>3.0</FileVersion>
+  <Workspace>
+    <WorkspaceType>Single-project</WorkspaceType>
+    <WorkspacePath>C:\STM32CubeIDE_temp\Template_STM32WB55_BLE_mesh\</WorkspacePath>
+    <underRoot>true</underRoot>
+    <TrustZone>0</TrustZone>
+    <HAL_Driver>C:\Users\Kamil\STM32Cube\Repository\STM32Cube_FW_WB_V1.10.0</HAL_Driver>
+    <CMSIS>Drivers/CMSIS</CMSIS>
+    <Toolchain>STM32CubeIDE</Toolchain>
+    <IocFile>Template_STM32WB55_BLE_mesh.ioc</IocFile>
+    <Project>
+      <ProjectName>Template_STM32WB55_BLE_mesh</ProjectName>
+      <ProjectNature>C</ProjectNature>
+      <Secure />
+      <filestoremove>
+        <file>
+          <name>Core\Src\tim.c</name>
+        </file>
+        <file>
+          <name>STM32_WPAN\App\tm.c</name>
+        </file>
+        <file>
+          <name>Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\lhci\lhci.c</name>
+        </file>
+      </filestoremove>
+      <sourceEntriesToRemove>
+        <sourceEntry />
+      </sourceEntriesToRemove>
+      <configs>
+        <config>
+          <name>Template_STM32WB55_BLE_mesh</name>
+          <mainSourceRepo>Core</mainSourceRepo>
+          <sourceStructure>Advanced</sourceStructure>
+          <device>STM32WB55RGVx</device>
+          <cpucore>ARM Cortex-M4</cpucore>
+          <fpu>SP</fpu>
+          <memories>
+            <memory access="xrw" name="RAM" size="256" start="0x20000000" />
+            <memory access="rx" name="FLASH" size="1024" start="0x8000000" />
+          </memories>
+          <startup>C:\Users\Kamil\STM32Cube\Repository\STM32Cube_FW_WB_V1.10.0\Drivers\CMSIS\Device\ST\STM32WBxx\Source\Templates\gcc\startup_stm32wb55xx_cm4.s</startup>
+          <LinkSettings>
+            <LinkAdditionalLibs />
+          </LinkSettings>
+          <heapSize>0x400</heapSize>
+          <stackSize>0x1000</stackSize>
+          <board>custom</board>
+          <debugprobe>swd</debugprobe>
+          <optimization />
+          <Aincludes>
+            <include />
+          </Aincludes>
+          <Adefines />
+          <Cdefines>
+            <define>USE_FULL_LL_DRIVER</define>
+            <define>USE_HAL_DRIVER</define>
+            <define>STM32WB55xx</define>
+          </Cdefines>
+          <Ldefines />
+          <Cincludes>
+            <include>Core\Inc</include>
+            <include>STM32_WPAN\App</include>
+            <include>Drivers\STM32WBxx_HAL_Driver\Inc</include>
+            <include>Drivers\STM32WBxx_HAL_Driver\Inc\Legacy</include>
+            <include>Utilities\lpm\tiny_lpm</include>
+            <include>Middlewares\ST\STM32_WPAN</include>
+            <include>Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread</include>
+            <include>Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\tl</include>
+            <include>Middlewares\ST\STM32_WPAN\interface\patterns\ble_thread\shci</include>
+            <include>Middlewares\ST\STM32_WPAN\utilities</include>
+            <include>Middlewares\ST\STM32_WPAN\ble\core</include>
+            <include>Middlewares\ST\STM32_WPAN\ble\core\auto</include>
+            <include>Middlewares\ST\STM32_WPAN\ble\core\template</include>
+            <include>Middlewares\ST\STM32_WPAN\ble\svc\Inc</include>
+            <include>Middlewares\ST\STM32_WPAN\ble\svc\Src</include>
+            <include>Drivers\CMSIS\Device\ST\STM32WBxx\Include</include>
+            <include>Utilities\sequencer</include>
+            <include>Middlewares\ST\STM32_WPAN\ble</include>
+            <include>Drivers\CMSIS\Include</include>
+          </Cincludes>
+          <definestoremove>
+            <Adefines />
+            <Cdefines>
+              <define>MBEDTLS_CONFIG_FILE="mbedtls_config.h"</define>
+            </Cdefines>
+            <Ldefines />
+          </definestoremove>
+          <inctoremove>
+            <Aincludes>
+              <include />
+            </Aincludes>
+            <Cincludes />
+          </inctoremove>
+        </config>
+      </configs>
+      <copyAsReference>false</copyAsReference>
+      <sourceEntries>
+        <sourceEntry>
+          <name>Core</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Drivers</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Middlewares</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>STM32_WPAN</name>
+        </sourceEntry>
+        <sourceEntry>
+          <name>Utilities</name>
+        </sourceEntry>
+      </sourceEntries>
+      <Groups />
+    </Project>
+  </Workspace>
+</ScratchFile>
+
